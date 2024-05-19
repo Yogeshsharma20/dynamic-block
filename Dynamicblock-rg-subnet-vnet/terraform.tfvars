@@ -1,0 +1,40 @@
+vnets = {
+  vnet1 = {
+    vnetname            = "testvnet-01"
+    location            = "West Europe"
+    resource_group_name = "Rg01"
+    address_space       = ["10.0.0.0/16"]
+    subnets             = {
+      snet1 = {
+        name           = "subnet1"
+        address_prefix = "10.0.1.0/24"
+      }
+      subnet2 = {
+        name           = "subnet2"
+        address_prefix = "10.0.2.0/24"
+      }
+      subnet3 = {
+        name           = "subnet3"
+        address_prefix = "10.0.3.0/24"
+      }
+    }
+  }
+}
+
+# subnets = {
+#   subnet1 = {
+#     name           = "subnet1"
+#     address_prefix = "10.0.1.0/24"
+#   }
+#   subnet2 = {
+#     name           = "subnet2"
+#     address_prefix = "10.0.2.0/24"
+#   }
+#   subnet3 = {
+#     name           = "subnet3"
+#     address_prefix = "10.0.3.0/24"
+#   }
+# }
+
+
+
